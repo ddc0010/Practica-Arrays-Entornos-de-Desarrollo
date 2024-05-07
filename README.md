@@ -1,1 +1,1 @@
-"# Practica-Arrays-Entornos-de-Desarrollo" 
+El repositorio esta un poco mal organizado porque he tenido unos cuantos problemas con los directorios y los git commits pero deberia de estar los paquetes util y test en el paquete src. El paquete PracticaArray es el primero que cree pero esta mal y ahi no esta casi nada del trabajo solo los primeros metodos. 
