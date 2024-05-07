@@ -4,16 +4,18 @@ import java.util.Arrays;
 
 public abstract class misArrays {
 	
-	public static float mediaNotas(int [] resultados) {
-	
-	int suma = 0; 
-	for (int nota : resultados) {
-		suma = nota;
+	public static float mediaNotas(int [] resultado) {
+		int suma = 0;
+		for (int nota : resultado) {
+			suma += nota;
+		}
+		return (float) suma/resultado.length;
 	}
-	return (float) suma/resultados.length;
-}
 	public static void main(String[] args) {
-		int[] notas = {6, 1, 4, 8, 9};
+        int[] notas = {5, 7, 9, 8, 8}; 
         System.out.println("La media es: " + mediaNotas(notas));
+
+	
+
 }
 }
