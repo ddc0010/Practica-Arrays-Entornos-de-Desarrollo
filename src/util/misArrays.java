@@ -1,0 +1,52 @@
+package util;
+
+import java.util.Arrays;
+
+public abstract class misArrays {
+	
+	public static float mediaNotas(int [] resultado) {
+		int suma = 0;
+		for (int nota : resultado) {
+			suma += nota;
+		}
+		return (float) suma/resultado.length;
+	}
+
+	public static float medianaNotas(int [] resultado){
+	Arrays.sort(resultado);
+	int num = resultado.length;
+	if (num %2 == 0)
+		return (float) (resultado[num/2] + resultado[num/2-1])/2;
+	return (float)(resultado[num/2] + resultado[num/2-1])/2 ;
+	}
+	
+	public static int maximaNota(int[] resultado) {
+        int maximo = resultado[0];
+        for (int nota : resultado) {
+            if (nota > maximo) {
+                maximo = nota;
+            }
+        }
+        return maximo;
+    }
+	
+	 public static int minimaNota(int[] resultado) {
+	        int minimo = resultado[0];
+	        for (int nota : resultado) {
+	            if (nota < minimo) {
+	                minimo = nota;
+	            }
+	        }
+	        return minimo;
+	    }
+
+
+
+	public static void main(String[] args) {
+        int[] notas = {5, 7, 9, 8, 8}; 
+        System.out.println("La media es: " + mediaNotas(notas));
+
+	
+
+}
+}
