@@ -19,6 +19,16 @@ public abstract class misArrays {
 			return (float) (resultado[num/2] + resultado[num/2-1])/2;
 		return (float)(resultado[num/2] + resultado[num/2-1])/2 ;
 		}
+
+	public static int maximaNota(int[] resultado) {
+        int maximo = resultado[0];
+        for (int nota : resultado) {
+            if (nota > maximo) {
+                maximo = nota;
+            }
+        }
+        return maximo;
+    }
 	
 	public static void main(String[] args) {
         int[] notas = {5, 7, 9, 8, 8}; 
