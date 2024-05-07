@@ -11,6 +11,25 @@ public abstract class misArrays {
 		}
 		return (float) suma/resultado.length;
 	}
+
+	public static float medianaNotas(int [] resultado){
+		Arrays.sort(resultado);
+		int num = resultado.length;
+		if (num %2 == 0)
+			return (float) (resultado[num/2] + resultado[num/2-1])/2;
+		return (float)(resultado[num/2] + resultado[num/2-1])/2 ;
+		}
+
+	public static int maximaNota(int[] resultado) {
+        int maximo = resultado[0];
+        for (int nota : resultado) {
+            if (nota > maximo) {
+                maximo = nota;
+            }
+        }
+        return maximo;
+    }
+	
 	public static void main(String[] args) {
         int[] notas = {5, 7, 9, 8, 8}; 
         System.out.println("La media es: " + mediaNotas(notas));
